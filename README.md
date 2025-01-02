@@ -5,16 +5,16 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 ## Features
 
 - **Home Page**: Introduction to who I am and what I do.
-- **Projects**: A collection of my work and the technologies I’ve used.
 - **About Me**: Detailed information about my background, experience, and skills.
-- **Contact**: A way to reach out to me via email or through social media links.
+- **Stacks , SoftSkills ,Works**: A collection of my work and the technologies I’ve used.
+- **Contact Me**: A way to reach out to me via email or through social media links.
 
 ## Technologies Used
 
 - **HTML5**: For the structure of the website.
-- **CSS3**: For styling the website with a modern design.
+- **CSS5**: For styling the website with a modern design.
 - **JavaScript**: For interactive features and functionality.
-- **React**: A JavaScript library for building user interfaces.
+- **ExpressJS**: A JavaScript library for creating backends .
 - **Node.js**: A JavaScript runtime for server-side development.
 - **Bootstrap/Tailwind CSS**: Frontend framework for responsive design.
 
