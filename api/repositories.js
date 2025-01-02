@@ -7,7 +7,7 @@ const fetchRepositories = async (url, headers, retries = 3) => {
   } catch (error) {
     if (retries > 0 && error.response?.status === 403) {
       console.warn(`Rate limit reached. Retrying in 60 seconds...`);
-      await new Promise(resolve => setTimeout(resolve, 60000)); // Wait 60 seconds
+      await new Promise(resolve => setTimeout(resolve, 60000));
       return fetchRepositories(url, headers, retries - 1);
     }
     throw error;
@@ -15,16 +15,15 @@ const fetchRepositories = async (url, headers, retries = 3) => {
 };
 
 module.exports = async (req, res) => {
-  const username = 'coderanik'; // Replace with the GitHub username
+  const username = 'coderanik'; 
   const apiUrl = `https://api.github.com/users/${username}/repos?sort=created&direction=desc`;
 
-  // GitHub Personal Access Token (optional)
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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'; 
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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'; 
 
   try {
     const response = await axios.get(apiUrl, {
       headers: {
-        Authorization: `token ${GITHUB_TOKEN}` // Optional for higher rate limits
+        Authorization: `Bearer ${GITHUB_TOKEN}` 
       }
     });
 
