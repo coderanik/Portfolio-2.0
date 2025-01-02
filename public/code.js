@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
 
 async function fetchRepositories() {
   try {
-    const response = await fetch('/api/repositories'); // Calls the serverless function
+    const response = await fetch('api/repositories'); // Calls the serverless function
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
