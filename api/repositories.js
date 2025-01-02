@@ -19,7 +19,7 @@ module.exports = async (req, res) => {
   const apiUrl = `https://api.github.com/users/${username}/repos?sort=created&direction=desc`;
 
   // GitHub Personal Access Token (optional)
-  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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'; 
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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'; 
 
   try {
     const response = await axios.get(apiUrl, {
