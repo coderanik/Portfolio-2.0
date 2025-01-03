@@ -329,9 +329,9 @@ svg{
   line-height: 1.6;
   margin-bottom: 40px;
   color: #d1d1d1;
-  padding-left: 40px;
-  padding-right: 40px;
-  text-align: justify;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
 }
           
 .skills-container {
